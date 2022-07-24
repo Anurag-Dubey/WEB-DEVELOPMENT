@@ -1,0 +1,155 @@
+.username-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    border-radius: 50px;
+    box-shadow: var(--mediumBoxShadow);
+    padding: 10px 16px;
+    transition-duration: 0.3s;
+}
+
+.username-holder:hover {
+    box-shadow: var(--darkBoxShadow);
+}
+
+.username-domain {
+    font-size: 108%;
+    color: #333;
+    font-weight: 500;
+}
+
+.username-input-holder {
+    width: 100%;
+}
+
+.username-input {
+    height: 40px;
+    border: none;
+    width: 100%;
+    font-size: 108%;
+    color: #AAA;
+    font-family: 'Inter', sans-serif;
+}
+
+.username-input::placeholder{
+    color: #AAA;
+}
+
+.username-btn {
+    background-color: var(--black);
+    color: white;
+    border-radius: 50px;
+    padding: 14px 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/************ hero *************/
+
+.hero-img-holder{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: var(--lightBoxShadow);
+    border-radius: 26px;
+}
+
+.hero-vid{
+    border-radius: 22px;
+    width: 285px;
+    display: block;
+}
+
+.platform-img{
+    position: absolute;
+    width: 60px;
+    box-shadow: var(--darkBoxShadow);
+    border-radius: 12px;
+}
+
+.ig-img{
+    top: 70px;
+    right: -50px;
+}
+
+.tiktok-img{
+    bottom: 230px;
+    left: -50px;
+}
+
+.youtube-img{
+    bottom: 70px;
+    right: -50px;
+}
+
+.niches{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 3% auto 4% auto;
+}
+
+.niche{
+    background-color: rgba(209, 212, 217, 0.38);
+    text-align: center;
+    min-width: 90px;
+    border-radius: 30px;
+    padding: 12px 20px;
+    margin: 8px;
+}
+
+.logo-title{
+    margin-top: -3%;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .username-holder{
+        width: calc(97% - 32px);
+    }
+
+    .username-input {
+        padding-left: 0;
+    }
+
+    .hero-img-holder{
+        width: 70%;
+        margin: 16% auto 0 auto;
+    }
+
+    .hero-vid{
+        width: 100%;
+    }
+
+    .tiktok-img{
+        bottom: 190px;
+        left: -38px;
+    }
+
+    .youtube-img, .ig-img{
+        right: -38px;
+    }
+
+    .platform-img{
+        width: 45px;
+    }
+
+    .niches{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .niche{
+        min-width: 80px;
+        padding: 8px 10px;
+        margin: 4px;
+        font-size: 80%;
+    }
+
+    .logo-title {
+        margin-top: -8%;
+    }
+}

@@ -1,0 +1,209 @@
+.change-txt{
+    display: block;
+    min-height: 51px;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    border-right: 3px solid var(--black);
+}
+
+.signup-btn {
+    background-color: var(--black);
+    color: white;
+    width: 220px;
+    padding: 20px;
+    margin: 0 18px;
+    font-size: 105% !important;
+}
+
+.example-row-holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.example-row-title{
+    font-size: 190%;
+    font-weight: 600;
+    margin: 0 0 11% 0;
+}
+
+.example-img-holder{
+    width: 50%;
+}
+
+.example-steps-holder{
+    width: 42%;
+}
+
+.example-step{
+    margin: 8% 0;
+}
+
+.example-step:last-child{
+    margin: 0;
+}
+
+.example-step-title{
+    margin: 0;
+    font-weight: 600;
+    font-size: 125%;
+}
+
+.example-step-txt{
+    line-height: 1.4;
+    font-size: 95%;
+    margin-top: 2%;
+    color: gray;
+    font-weight: 400;
+}
+
+.example-img{
+    width: 100%;
+    filter: drop-shadow(2px 8px 0.9rem #f9f9f9);
+}
+
+.badge{
+    padding: 3px 10px;
+    font-size: 60%;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-left: 8px;
+    color: #ed8200;
+    background-color: var(--orange);
+    display: inline-flex;
+}
+
+
+/* content row */
+
+.content-holder-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.content-holder-row .content-holder{
+    width: 33%;
+    box-shadow: var(--darkBoxShadow);
+    border-radius: 8px;
+}
+
+.content-holder-row .content-holder:nth-child(2){
+    margin-bottom: 58px;
+}
+
+/* content row end */
+
+
+.niches{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 3% auto 4% auto;
+}
+
+.niche{
+    background-color: rgba(209, 212, 217, 0.38);
+    text-align: center;
+    min-width: 90px;
+    border-radius: 30px;
+    padding: 12px 20px;
+    margin: 8px;
+}
+
+.hero-img-holder{
+    width: 64%;
+    margin: 0 auto;
+}
+
+.hero-img-holder img{
+    width: 100%;
+}
+
+.row-title-center.row-title-plan{
+    font-size: 200%;
+    margin-top: 12%;
+}
+
+.demo-vid-holder{
+    width: 78%;
+    margin: 3% auto 0 auto;
+}
+
+.demo-vid{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--black);
+}
+
+@media only screen and (max-width: 800px) {
+    .change-txt{
+        margin: 5px auto 0 auto;
+    }
+
+    .signup-btn{
+        width: 60%;
+    }
+
+    .example-row-holder{
+        flex-direction: column-reverse;
+    }
+
+    .example-row-holder-reverse{
+        flex-direction: column;
+    }
+
+    .example-steps-holder, .example-img-holder{
+        width: 100%;
+    }
+
+    .example-row-title{
+        font-size: 150%;
+        margin: 6% 0 11% 0;
+    }
+
+    .example-step-title{
+        font-size: 120%;
+    }
+
+    .example-img{
+        filter: drop-shadow(2px 8px 0.9rem #eee);
+    }
+
+
+    .content-holder-row{
+        overflow-x: scroll;
+    }
+
+    .content-holder-row .content-holder{
+        box-shadow: none;
+    }
+
+    .content-holder-row .content-holder:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    .niches{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .niche{
+        min-width: 80px;
+        padding: 8px 10px;
+        margin: 4px;
+        font-size: 80%;
+    }
+
+    .hero-img-holder{
+        width: 100%;
+        margin: 8% 0 -2% 0;
+    }
+
+    .demo-vid-holder{
+        width: 100%;
+        margin: 11% auto 0 auto;
+    }
+}

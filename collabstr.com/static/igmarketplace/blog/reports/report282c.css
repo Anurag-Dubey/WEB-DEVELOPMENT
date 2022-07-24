@@ -1,0 +1,265 @@
+.img-holder{
+    width: 65%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-title {
+    font-size: 215%;
+    margin: 0 0 4% 0;
+    text-align: center;
+}
+
+.post-holder{
+    width: 70%;
+    margin: 4% auto;
+}
+
+.index-holder{
+    box-shadow: var(--darkBoxShadow);
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    padding: 0 0 10px 0;
+    margin: 6% 0;
+}
+
+.index-title{
+    text-align: center;
+    font-size: 150%;
+    font-weight: 600;
+    padding: 20px 0;
+    background: var(--gradientText);
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.index-holder li{
+    margin: 35px 0;
+    list-style-type: square;
+    font-size: 100%;
+}
+
+.index-holder a{
+    font-weight: 500;
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+}
+
+
+h2, h3{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+h3, h4{
+    font-weight: 600;
+}
+
+h4{
+    margin-top: 6%;
+}
+
+.post-holder .infographic{
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 4% 0;
+    width: 75%;
+}
+
+p{
+    text-align: left;
+    line-height: 1.4;
+    margin: 2% 0;
+}
+
+li{
+    margin: 20px 0;
+}
+
+p, li{
+    font-size: 105%;
+}
+
+iframe{
+    max-width: 100%;
+    margin: 5% auto 5% auto;
+    display: block;
+}
+
+.cta-holder{
+    width: 100%;
+    margin: 8% auto 0 auto;
+    height: 390px;
+    position: relative;
+    background-color: #2b2b2b75;
+    display: flex;
+    border-radius: 15px;
+}
+
+.cta-overlay-holder{
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    background: linear-gradient(to right, #212121 74%, #000000b8 84%, #000000ab 87%, #0000009c 92%,#00000087 95%, #0000006b 97%,transparent);
+    color: white;
+    border-radius: 15px 0 0 15px;
+}
+
+.cta-txt-holder{
+    width: 80%;
+    height: 100%;
+    margin: -2% auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta-img{
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+    object-position: 100px;
+    margin-left: auto;
+    border-radius: 15px;
+}
+
+.cta-title{
+    font-weight: 600;
+    font-size: 210%;
+    margin: 0;
+}
+
+.cta-txt{
+    margin: 3% 0;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+.cta-btn{
+    background-color: white;
+    color: var(--black);
+    width: 190px;
+    padding: 16px 5px;
+    margin: 3% 0 0 0;
+}
+
+/**************** newsletter ***********/
+
+.signup-holder{
+    background-color: var(--black);
+    color: white;
+    width: calc(88% - 40px);
+    margin: 7% auto 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    padding: 50px 20px;
+    border: 1px solid var(--black);
+}
+
+.signup-title{
+    font-size: 210%;
+    margin: 0;
+}
+
+.signup-txt{
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 110%;
+    margin: 2% 0 3% 0;
+}
+
+.signup-form{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.signup-input{
+    width: 400px;
+    font-size: 105% !important;
+    border-radius: 8px 0 0 8px !important;
+}
+
+.signup-btn{
+    background: var(--gradientText);
+    background-color: var(--black);
+    color: white;
+    width: fit-content;
+    padding: 20px;
+    font-size: 105% !important;
+    border-radius: 0 8px 8px 0 !important;
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 800px) {
+    .img-holder{
+        width: 100%;
+        height: 210px;
+    }
+
+    .post-holder{
+        width: 92%;
+        margin: 6% auto;
+    }
+
+    .index-holder{
+        margin: 15% 0;
+    }
+
+    h2, h3{
+        margin-top: 13%;
+        margin-bottom: 8%;
+    }
+
+    p{
+        margin: 6% 0;
+    }
+
+    .post-holder img{
+        width: 100%;
+    }
+
+    .cta-holder{
+        margin: 12% auto 0 auto;
+        width: 92%;
+    }
+
+    .cta-overlay-holder{
+        width: 100%;
+        background: rgba(0, 0, 0, 0.65);
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .cta-img{
+        width: 100%;
+        object-position: 0;
+    }
+
+    .cta-txt-holder{
+        width: 90%;
+    }
+
+    .cta-title{
+        font-size: 175%;
+    }
+
+    .cta-txt{
+        margin: 5% 0;
+    }
+
+    .cta-btn{
+        width: 75%;
+        padding: 22px 0;
+        margin: 5% auto 0 auto;
+    }
+
+}

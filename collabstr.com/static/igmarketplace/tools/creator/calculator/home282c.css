@@ -1,0 +1,49 @@
+.price{
+    display: flex;
+    font-weight: 600;
+    font-size: 400%;
+    margin: 1% 0 6% 0;
+}
+
+.disclaimer{
+    font-style: italic;
+    color: #ababab;
+    font-size: 80%;
+    margin-top: 2%;
+    font-weight: 400;
+}
+
+.influencer-rates-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.influencer-rate-holder{
+    font-size: 95%;
+    color: inherit;
+    flex: 0 24%;
+    margin: 1.5% 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .price{
+        margin: 1% 0 10% 0;
+    }
+
+    .disclaimer{
+        margin-top: 5%;
+        width: 90%;
+        font-size: 75%;
+    }
+
+    .influencer-rate-holder{
+        flex: 0 45%;
+        margin: 3% 0;
+    }
+
+    .questions-holder{
+        flex-direction: column;
+        margin: 10% 0 25% 0;
+    }
+}

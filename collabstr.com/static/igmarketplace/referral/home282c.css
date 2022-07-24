@@ -1,0 +1,74 @@
+.btn-row{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.referral-join-btn {
+    background-color: var(--black);
+    color: white;
+    width: 220px;
+    padding: 20px;
+    margin: 0 18px;
+}
+
+.referral-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img-holder{
+    margin: 0 90px 0 0;
+}
+
+.referral-steps-holder{
+    width: 42%;
+}
+
+.referral-step{
+    margin: 13% 0;
+}
+
+.referral-step-title{
+    margin: 0;
+    font-weight: 600;
+    font-size: 155%;
+}
+
+.referral-step-txt{
+    line-height: 1.4;
+    font-size: 105%;
+    margin-top: 2%;
+    color: gray;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 800px) {
+    .btn-row{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .referral-join-btn{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .referral-row{
+        flex-direction: column;
+    }
+
+    .hero-img-holder{
+        margin: 16% auto 0 auto;
+    }
+
+    .referral-steps-holder{
+        width: 100%;
+    }
+
+    .referral-step-title{
+        font-size: 130%;
+    }
+}

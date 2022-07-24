@@ -1,0 +1,64 @@
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    text-align: left !important;
+}
+
+.row > div{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.summary{
+    color: gray;
+    font-size: 95%;
+    line-height: 1.6;
+}
+
+.check{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.feature{
+    font-size: 95%;
+    margin: 4% 0;
+    display: flex;
+    align-items: center;
+}
+
+.img{
+    max-width: 500px;
+    width: 88%;
+}
+
+.download-btn{
+    padding: 22px;
+    background: var(--gradientText);
+    color: white;
+    width: 250px;
+    margin: 6% auto 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .row{
+        flex-direction: column;
+    }
+
+    .row > div{
+        width: 92%;
+    }
+
+    .img {
+        width: 70%;
+    }
+
+    .download-btn{
+        width: 90%;
+        margin: 11% auto;
+    }
+}

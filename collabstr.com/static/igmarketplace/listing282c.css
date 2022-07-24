@@ -1,0 +1,89 @@
+.profile-listing-holder, .featured-profile-listing-holder{
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-listing-img-holder {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    border-radius: 9px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.profile-listing-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    -webkit-mask-image: linear-gradient(to top, rgb(0 0 0 / 50%) 10%, rgba(0, 0, 0, 1));
+    transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.13, 1.02) 0s;
+}
+
+.profile-listing-holder:hover .profile-listing-img, .featured-profile-listing-holder:hover .profile-listing-img, .category-listing-holder:hover .category-listing-img{
+    transform: scale(1.1);
+}
+
+.profile-listing-owner-holder {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-listing-owner-info-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-listing-owner-name {
+    display: flex;
+    align-items: center;
+    font-size: 80%;
+    color: white;
+    font-weight: 600;
+}
+
+.verified-badge{
+    width: 14px;
+    margin-left: 4px;
+}
+
+.profile-listing-owner-location {
+    font-size: 72%;
+    color: white;
+    font-weight: 300;
+    margin-top: 1px;
+}
+
+.profile-listing-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.profile-listing-category {
+    color: var(--lightGray);
+    font-size: 75%;
+}
+
+.profile-listing-price {
+    font-weight: 600;
+    font-size: 95%;
+}
+
+.profile-listing-title {
+    font-size: 90%;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .profile-listing-img-holder {
+        height: 220px;
+    }
+}

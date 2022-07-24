@@ -1,0 +1,28 @@
+.contract-title{
+    font-size: 255%;
+    text-align: center;
+    font-weight: 600;
+    width: 65%;
+    margin: 7% auto;
+}
+
+.contract-holder{
+    border-radius: 8px;
+    box-shadow: var(--darkBoxShadow);
+    padding: 20px 50px;
+    width: 75%;
+    margin: 7% auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .contract-title{
+        width: 100%;
+        font-size: 165%;
+    }
+
+    .contract-holder{
+        padding: 20px;
+        width: calc(100% - 40px);
+        margin: 12% auto;
+    }
+}

@@ -1,0 +1,170 @@
+#content {
+    width: 88% !important;
+}
+
+.title{
+    line-height: 1.4;
+    max-width: 700px;
+    margin: 6% 0 0 0 !important;
+    text-align: left !important;
+}
+
+.subtitle{
+    color: gray;
+    font-size: 120%;
+    font-weight: 400;
+    margin: 1.5% 0 7% 0;
+}
+
+.section-holder {
+    margin-bottom: 6%;
+}
+
+.section-title {
+    display: flex;
+    align-items: baseline;
+    font-size: 160%;
+    font-weight: 600;
+    margin: 0;
+}
+
+.explore-btn {
+    font-size: 55%;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.listing-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.featured-profile-listing-holder:first-child{
+    width: 48%;
+}
+
+.profile-listing-img-holder{
+    height: 370px !important;
+}
+
+.featured-profile-listing-holder {
+    width: 24%;
+    min-width: 230px;
+    margin-bottom: 2%;
+}
+
+.profile-listing-img {
+    -webkit-mask-image: linear-gradient(to top, rgb(0 0 0 / 30%) -15%, rgba(0, 0, 0, 1)) !important;
+}
+
+.post-title {
+    font-size: 130%;
+    color: white;
+    font-weight: 500;
+    padding: 20px 12px;
+    margin: 0;
+}
+
+.posts-holder{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.collabstr-listing-img{
+    -webkit-mask-image: none !important;
+    object-position: left;
+}
+
+/* partners */
+
+.partners-holder{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.partner-holder{
+    margin: 0 2% 2% 0;
+    flex: 0 21%;
+    padding: 20px 15px;
+    box-shadow: var(--lightBoxShadow);
+    border-radius: 8px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.partner-img{
+    height: 19px;
+}
+
+.partner-desc{
+    font-size: 85%;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 6% 0;
+}
+
+.learn-more-btn{
+    font-size: 90%;
+    margin-top: auto;
+    color: inherit;
+}
+
+@media only screen and (max-width: 1000px) {
+    .listing-row {
+        overflow-x: scroll;
+        margin-top: 4%;
+    }
+
+    .listing-row .featured-profile-listing-holder{
+        margin: 0 3% 0 0;
+    }
+
+    .section-holder {
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #content {
+        width: 92% !important;
+    }
+
+    .title{
+        margin: 8% 0 0 0 !important;
+    }
+
+    .subtitle{
+        margin: 3% 0 14% 0;
+        line-height: 1.4;
+        font-size: 100%;
+    }
+
+    .featured-profile-listing-holder {
+        width: 100%;
+    }
+
+    .posts-holder .featured-profile-listing-holder{
+        margin: 4% 0;
+    }
+
+    .featured-profile-listing-holder:first-child{
+        width: 100%;
+    }
+
+    .profile-listing-img-holder{
+        height: 240px !important;
+    }
+
+    .partners-holder{
+        flex-direction: column;
+    }
+
+    .partner-holder{
+        margin: 5% 0;
+    }
+}

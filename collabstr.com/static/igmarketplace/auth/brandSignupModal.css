@@ -1,0 +1,78 @@
+.modal .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.modal-txt{
+    text-align: left;
+    color: gray;
+    font-size: 90%;
+    margin-bottom: 5%;
+    line-height: 1.3;
+}
+
+.modal .input {
+    width: calc(100% - 10px);
+    margin: 2% 0;
+}
+
+.modal select:not(.sms-country-dropdown){
+    width: 100% !important;
+}
+
+.login-signup {
+    margin-top: 20px;
+    color: var(--lightGray);
+    font-size: 80%;
+    cursor: pointer;
+}
+
+.legal-signup {
+    font-size: 60%;
+}
+
+.login-signup a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.form-holder-login, .form-holder-forgot{
+    display: none;
+}
+
+.modal-delete-btn, .modal-pause-btn{
+    color: gray;
+    cursor: pointer;
+    font-size: 90%;
+    width: fit-content;
+    margin: 15px auto;
+}
+
+.sms-row {
+    display: flex;
+}
+
+.sms-country-dropdown {
+    width: 45% !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: none !important;
+}
+
+.phone-number-input{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.sms-form-verify{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .modal .input {
+        margin: 3% 0;
+    }
+}
